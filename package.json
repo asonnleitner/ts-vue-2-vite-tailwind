@@ -1,0 +1,57 @@
+{
+  "name": "ts-vue-2-vite-tailwind",
+  "packageManager": "pnpm@7.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:js": "eslint --fix --ignore-path .gitignore",
+    "lint:prettier": "pretty-quick --staged --ignore-path .gitignore",
+    "lint:fix": "pnpm lint:js && pnpm lint:prettier",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": [
+      "lint:js",
+      "lint:prettier"
+    ]
+  },
+  "dependencies": {
+    "vue": "2.6.14",
+    "vue-router": "3.5.3",
+    "vuex": "3.6.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.1",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "@types/node": "^17.0.31",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "@vue/runtime-core": "^3.2.33",
+    "@vue/tsconfig": "^0.1.3",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.4.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "postcss": "^8.4.13",
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.10",
+    "pretty-quick": "^3.1.3",
+    "tailwindcss": "^3.0.24",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.5.4",
+    "unplugin-auto-import": "^0.7.1",
+    "unplugin-vue-components": "^0.19.3",
+    "vite": "^2.9.2",
+    "vite-plugin-vue2": "^2.0.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

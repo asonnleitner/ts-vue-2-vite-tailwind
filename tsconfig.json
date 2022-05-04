@@ -1,0 +1,28 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "allowJs": false,
+    "noImplicitAny": false,
+    "declaration": true,
+    "sourceMap": true,
+    "types": ["node", "vue", "vite/client"],
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "include": ["src", "typings", "vite.config.ts"],
+  "exclude": ["node_modules", "dist", "cypress", "**/__tests__/**/*"]
+}

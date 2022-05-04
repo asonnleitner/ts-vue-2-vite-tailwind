@@ -1,0 +1,7 @@
+{
+  "globals": {
+    "Vue": "readonly",
+    "VueRouter": "readonly",
+    "Vuex": "readonly"
+  }
+}
